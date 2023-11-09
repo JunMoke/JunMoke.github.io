@@ -73,6 +73,65 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-picgo之github图床搭建" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" class="article-date">
+  <time class="dt-published" datetime="2023-11-09T02:53:24.000Z" itemprop="datePublished">2023-11-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">picgo之github图床搭建</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="应用概述"><a href="#应用概述" class="headerlink" title="应用概述"></a>应用概述</h2><p><strong>一个用于快速上传图片并获取图片 URL 链接的工具</strong></p>
+<p><strong>PicGO</strong> 是一款功能非常强大的图床管理工具，支持SM.MS、腾讯COS、GitHub图床、七牛云图床、Imgur图床、阿里云OSS、gitee、华为云OBS等多种图床平台。</p>
+<p>使用这款工具，第一是因为功能非常强大，支持插件扩展，融合多平台图床服务；第二则是 <a target="_blank" rel="noopener" href="https://typora.io/">Typora</a> 和 <a target="_blank" rel="noopener" href="https://obsidian.md/">Obsidian</a> 设置中可选工具之一就是 PicGo 工具。</p>
+<p>下载 <a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/">PicGo</a>，下载后双击安装即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-03-48.png"></p>
+<h2 id="图床安装与使用"><a href="#图床安装与使用" class="headerlink" title="图床安装与使用"></a>图床安装与使用</h2><p>picgo+github配置参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/hellowujianning/article/details/119559517">PicGo配置</a></p>
+<p><strong>注意配置cnd时格式为：</strong><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/"><strong>https://cdn.jsdelivr.net/gh/</strong></a><strong>你的github用户名&#x2F;你的仓库名@分支（一般为main）&#x2F;</strong></p>
+<h2 id="扩展：使用-Piclist-代替-Picgo"><a href="#扩展：使用-Piclist-代替-Picgo" class="headerlink" title="扩展：使用 Piclist 代替 Picgo"></a>扩展：使用 Piclist 代替 Picgo</h2><h3 id="应用概述-1"><a href="#应用概述-1" class="headerlink" title="应用概述"></a>应用概述</h3><p>PicList 是一种高效的云存储和图像托管平台管理工具。在PicGo的基础上，它进行了深入的修改和增强。它不仅保留了 PicGo 的所有功能，而且还添加了许多新功能。例如，相册现在支持同步删除云中的文件。内置映像托管选项已扩展为包括 WebDav、本地映像托管和 SFTP。此外，PicList 还引入了全面的云存储管理功能，包括云目录查看、文件搜索、批量上传、下载和文件删除、复制各种格式的链接以及图像、Markdown、文本和视频的预览。此外，它还拥有更强大的专辑功能以及许多其他改进和增强功能。</p>
+<p>下载 <a target="_blank" rel="noopener" href="https://piclist.cn/">Piclist</a>，下载后双击安装即可。</p>
+<p>特点：</p>
+<ul>
+<li>内置PicGo最新版本，完美兼容已有PicGo插件和软件搭配生态</li>
+<li>完整的多平台云存储管理功能，上传、下载、删除一站式解决</li>
+<li>水印、压缩、旋转、格式转换等功能，自动化处理图片</li>
+<li>优化PicGo的使用体验，提供更多的功能和便捷的操作方式</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-04.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-20.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-51.png"></p>
+<h2 id="obsidian-插件设置"><a href="#obsidian-插件设置" class="headerlink" title="obsidian 插件设置"></a>obsidian 插件设置</h2><p>在社区插件中，搜索并安装图像自动上传插件。接下来，进入插件设置页面，将默认上传器更改为 PicGo（app）。将 PicGo 服务器 <code>http://127.0.0.1:36677/upload</code> 设置为如下图所示。此外，此插件还支持通过 PicList 进行基于云的删除。要使用此功能，请进入 <code>http://127.0.0.1:36677/delete</code> 删除界面。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-06-52.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" data-id="cloqmdvnu0001kowb8iuf4m7b" data-title="picgo之github图床搭建" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Markdown语法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/11/08/Markdown%E8%AF%AD%E6%B3%95/" class="article-date">
@@ -95,7 +154,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>这里是 <a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown 官方教程</a>，想全面了解 <strong>Markdown</strong> 可以访问学习。</p>
+        <p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-17-38.png"></p>
+<p>这里是 <a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown 官方教程</a>，想全面了解 <strong>Markdown</strong> 可以访问学习。</p>
 <hr>
 <h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>标题用井号（ # ）+ 空格 + 标题名称表示，markdown共支持六级标题。<br>还可以在文本下方添加任意数量的 &#x3D;&#x3D; 号来标识一级标题，或者 – 号来标识二级标题。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
@@ -153,8 +213,9 @@
 <p>渲染效果如下：</p>
 <p>这是一个链接 <a target="_blank" rel="noopener" href="https://markdown.com.cn/" title="最好的markdown教程">Markdown语法</a>。</p>
 <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>要添加图像，请使用感叹号 (<code>!</code>), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">示例图片</span>](<span class="link">https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/obsidian_image/MokeJun_%E5%90%9B%E9%99%8C%E5%AE%A2_2023-11-08_20-34-45.png</span>)</span><br></pre></td></tr></table></figure>
-
+<p>! + [替代文本] + (链接)</p>
+<p>示例如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-09-55.png"></p>
 <hr>
 <h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 \ 。</p>
 <hr>
@@ -238,7 +299,7 @@ Add as many paragraphs as you like.
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/11/08/Markdown%E8%AF%AD%E6%B3%95/" data-id="cloqhzz580000r8wbbqt9cw82" data-title="Markdown语法" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2023/11/08/Markdown%E8%AF%AD%E6%B3%95/" data-id="cloqmdvnm0000kowb54458krn" data-title="Markdown语法" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -337,58 +398,7 @@ Add as many paragraphs as you like.
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/11/08/%E4%BD%BF%E7%94%A8github%E5%88%9B%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" data-id="cloqhzz5w0002r8wb5hnraf4e" data-title="使用github创建hexo博客" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/11/07/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-11-07T07:31:13.008Z" itemprop="datePublished">2023-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/11/07/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/11/07/hello-world/" data-id="cloqhzz5q0001r8wbc1kodujn" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2023/11/08/%E4%BD%BF%E7%94%A8github%E5%88%9B%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" data-id="cloqmdvnx0002kowb7mqu9bc6" data-title="使用github创建hexo博客" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -431,15 +441,15 @@ Add as many paragraphs as you like.
       <ul>
         
           <li>
+            <a href="/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">picgo之github图床搭建</a>
+          </li>
+        
+          <li>
             <a href="/2023/11/08/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a>
           </li>
         
           <li>
             <a href="/2023/11/08/%E4%BD%BF%E7%94%A8github%E5%88%9B%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">使用github创建hexo博客</a>
-          </li>
-        
-          <li>
-            <a href="/2023/11/07/hello-world/">Hello World</a>
           </li>
         
       </ul>
