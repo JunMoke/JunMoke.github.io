@@ -20,25 +20,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="应用概述一个用于快速上传图片并获取图片 URL 链接的工具 PicGO 是一款功能非常强大的图床管理工具，支持SM.MS、腾讯COS、GitHub图床、七牛云图床、Imgur图床、阿里云OSS、gitee、华为云OBS等多种图床平台。 使用这款工具，第一是因为功能非常强大，支持插件扩展，融合多平台图床服务；第二则是 Typora 和 Obsidian 设置中可选工具之一就是 PicGo 工具。 下">
+  <meta name="description" content="私网地址范围 A段：10.0.0.0~10.255.255.255 B段：172.16.0.0~172.31.255.255 C段：192.168.0.0~192.168.255.255  三种模式安装完成vmware以后 进入虚拟机—&gt;&gt;设置—&gt;&gt;网络适配器 在网络适配器中可以发现vmware为我们提供了三种网络工作模式，它们分别是：  Bridged（桥接模式） NAT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="picgo之github图床搭建">
-<meta property="og:url" content="http://example.com/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">
+<meta property="og:title" content="VMware的三种模式">
+<meta property="og:url" content="http://example.com/2023/11/09/VMware%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F/">
 <meta property="og:site_name" content="无名录">
-<meta property="og:description" content="应用概述一个用于快速上传图片并获取图片 URL 链接的工具 PicGO 是一款功能非常强大的图床管理工具，支持SM.MS、腾讯COS、GitHub图床、七牛云图床、Imgur图床、阿里云OSS、gitee、华为云OBS等多种图床平台。 使用这款工具，第一是因为功能非常强大，支持插件扩展，融合多平台图床服务；第二则是 Typora 和 Obsidian 设置中可选工具之一就是 PicGo 工具。 下">
+<meta property="og:description" content="私网地址范围 A段：10.0.0.0~10.255.255.255 B段：172.16.0.0~172.31.255.255 C段：192.168.0.0~192.168.255.255  三种模式安装完成vmware以后 进入虚拟机—&gt;&gt;设置—&gt;&gt;网络适配器 在网络适配器中可以发现vmware为我们提供了三种网络工作模式，它们分别是：  Bridged（桥接模式） NAT">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-03-48.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-04.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-20.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-51.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-06-52.png">
-<meta property="article:published_time" content="2023-11-09T02:53:24.000Z">
-<meta property="article:modified_time" content="2023-11-09T03:08:18.421Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-16-22-30.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-16-26-16.png">
+<meta property="article:published_time" content="2023-11-09T08:29:40.000Z">
+<meta property="article:modified_time" content="2023-11-09T08:30:14.141Z">
 <meta property="article:author" content="MokeJun_君陌客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-03-48.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-16-22-30.png">
 
-<link rel="canonical" href="http://example.com/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">
+<link rel="canonical" href="http://example.com/2023/11/09/VMware%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F/">
 
 
 <script id="page-configurations">
@@ -51,7 +48,7 @@
   };
 </script>
 
-  <title>picgo之github图床搭建 | 无名录</title>
+  <title>VMware的三种模式 | 无名录</title>
   
 
 
@@ -156,7 +153,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/09/VMware%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -169,7 +166,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          picgo之github图床搭建
+          VMware的三种模式
         </h1>
 
         <div class="post-meta">
@@ -180,7 +177,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-09 10:53:24 / 修改时间：11:08:18" itemprop="dateCreated datePublished" datetime="2023-11-09T10:53:24+08:00">2023-11-09</time>
+              <time title="创建时间：2023-11-09 16:29:40 / 修改时间：16:30:14" itemprop="dateCreated datePublished" datetime="2023-11-09T16:29:40+08:00">2023-11-09</time>
             </span>
 
           
@@ -194,27 +191,33 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="应用概述"><a href="#应用概述" class="headerlink" title="应用概述"></a>应用概述</h2><p><strong>一个用于快速上传图片并获取图片 URL 链接的工具</strong></p>
-<p><strong>PicGO</strong> 是一款功能非常强大的图床管理工具，支持SM.MS、腾讯COS、GitHub图床、七牛云图床、Imgur图床、阿里云OSS、gitee、华为云OBS等多种图床平台。</p>
-<p>使用这款工具，第一是因为功能非常强大，支持插件扩展，融合多平台图床服务；第二则是 <a target="_blank" rel="noopener" href="https://typora.io/">Typora</a> 和 <a target="_blank" rel="noopener" href="https://obsidian.md/">Obsidian</a> 设置中可选工具之一就是 PicGo 工具。</p>
-<p>下载 <a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/">PicGo</a>，下载后双击安装即可。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-03-48.png"></p>
-<h2 id="图床安装与使用"><a href="#图床安装与使用" class="headerlink" title="图床安装与使用"></a>图床安装与使用</h2><p>picgo+github配置参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/hellowujianning/article/details/119559517">PicGo配置</a></p>
-<p><strong>注意配置cnd时格式为：</strong><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/"><strong>https://cdn.jsdelivr.net/gh/</strong></a><strong>你的github用户名&#x2F;你的仓库名@分支（一般为main）&#x2F;</strong></p>
-<h2 id="扩展：使用-Piclist-代替-Picgo"><a href="#扩展：使用-Piclist-代替-Picgo" class="headerlink" title="扩展：使用 Piclist 代替 Picgo"></a>扩展：使用 Piclist 代替 Picgo</h2><h3 id="应用概述-1"><a href="#应用概述-1" class="headerlink" title="应用概述"></a>应用概述</h3><p>PicList 是一种高效的云存储和图像托管平台管理工具。在PicGo的基础上，它进行了深入的修改和增强。它不仅保留了 PicGo 的所有功能，而且还添加了许多新功能。例如，相册现在支持同步删除云中的文件。内置映像托管选项已扩展为包括 WebDav、本地映像托管和 SFTP。此外，PicList 还引入了全面的云存储管理功能，包括云目录查看、文件搜索、批量上传、下载和文件删除、复制各种格式的链接以及图像、Markdown、文本和视频的预览。此外，它还拥有更强大的专辑功能以及许多其他改进和增强功能。</p>
-<p>下载 <a target="_blank" rel="noopener" href="https://piclist.cn/">Piclist</a>，下载后双击安装即可。</p>
-<p>特点：</p>
-<ul>
-<li>内置PicGo最新版本，完美兼容已有PicGo插件和软件搭配生态</li>
-<li>完整的多平台云存储管理功能，上传、下载、删除一站式解决</li>
-<li>水印、压缩、旋转、格式转换等功能，自动化处理图片</li>
-<li>优化PicGo的使用体验，提供更多的功能和便捷的操作方式</li>
+        <h1 id="私网地址范围"><a href="#私网地址范围" class="headerlink" title="私网地址范围"></a>私网地址范围</h1><ul>
+<li>A段：10.0.0.0~10.255.255.255</li>
+<li>B段：172.16.0.0~172.31.255.255</li>
+<li>C段：192.168.0.0~192.168.255.255</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-04.png"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-20.png"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-05-51.png"></p>
-<h2 id="obsidian-插件设置"><a href="#obsidian-插件设置" class="headerlink" title="obsidian 插件设置"></a>obsidian 插件设置</h2><p>在社区插件中，搜索并安装图像自动上传插件。接下来，进入插件设置页面，将默认上传器更改为 PicGo（app）。将 PicGo 服务器 <code>http://127.0.0.1:36677/upload</code> 设置为如下图所示。此外，此插件还支持通过 PicList 进行基于云的删除。要使用此功能，请进入 <code>http://127.0.0.1:36677/delete</code> 删除界面。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-11-06-52.png"></p>
+<h1 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h1><p>安装完成vmware以后</p>
+<p>进入虚拟机—&gt;&gt;设置—&gt;&gt;网络适配器</p>
+<p>在网络适配器中可以发现vmware为我们提供了三种网络工作模式，它们分别是：</p>
+<ol>
+<li>Bridged（桥接模式）</li>
+<li>NAT（网络地址转换模式）</li>
+<li>Host-Only（仅主机模式）</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-16-22-30.png"></p>
+<p>打开vmware虚拟机，我们可以在选项栏的<strong>“编辑”</strong>下的<strong>“虚拟网络编辑器”</strong>中看到<br>三种不同模式下对应的虚拟网卡名称，以及链接状态，IP地址网段等信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JunMoke/obsidian_image@main/image/mokejun616_2023-11-09-16-26-16.png"></p>
+<p><strong>作用：</strong>那么这些都是有什么作用呢？其实：</p>
+<ul>
+<li>VMnet0表示的是用于桥接模式下的虚拟交换机；</li>
+<li>VMnet1表示的是用于仅主机模式下的虚拟交换机；</li>
+<li>VMnet8表示的是用于NAT模式下的虚拟交换机；</li>
+</ul>
+<p>同时，在主机上对应的有显示相应的网卡信息</p>
+<h2 id="Bridged（桥接模式）"><a href="#Bridged（桥接模式）" class="headerlink" title="Bridged（桥接模式）"></a>Bridged（桥接模式）</h2><h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><p>什么是桥接模式？桥接模式就是将主机网卡与虚拟机虚拟的网卡利用虚拟网桥进行通信。在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致。</p>
+<h2 id="NAT（地址转换模式）"><a href="#NAT（地址转换模式）" class="headerlink" title="NAT（地址转换模式）"></a>NAT（地址转换模式）</h2><h3 id="描述-1"><a href="#描述-1" class="headerlink" title="描述"></a>描述</h3><p>刚刚我们说到，如果你的网络ip资源紧缺，但是你又希望你的虚拟机能够联网，这时候NAT模式是最好的选择。NAT模式借助<strong>虚拟NAT设备</strong>和<strong>虚拟DHCP服务器</strong>，使得虚拟机可以联网。</p>
+<p>在NAT模式中，主机网卡直接与虚拟NAT设备相连，然后虚拟NAT设备与虚拟DHCP服务器一起连接在虚拟交换机VMnet8上，这样就实现了虚拟机联网。那么我们会觉得很奇怪，为什么需要虚拟网卡VMware Network Adapter VMnet8呢？原来我们的VMware Network Adapter VMnet8虚拟网卡主要是为了实现主机与虚拟机之间的通信。</p>
+<h2 id="Host-Only（仅主机模式）"><a href="#Host-Only（仅主机模式）" class="headerlink" title="Host-Only（仅主机模式）"></a>Host-Only（仅主机模式）</h2><h3 id="描述-2"><a href="#描述-2" class="headerlink" title="描述"></a>描述</h3><p>Host-Only模式其实就是<strong>NAT模式</strong>去除了<strong>虚拟NAT设备</strong>，然后使用<strong>VMware Network Adapter VMnet1</strong>虚拟网卡连接<strong>VMnet1虚拟交换机</strong>来与<strong>虚拟机</strong>通信的，Host-Only模式将虚拟机与外网隔开，使得虚拟机成为一个独立的系统，只与主机相互通讯。</p>
 
     </div>
 
@@ -230,12 +233,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/11/08/Markdown%E8%AF%AD%E6%B3%95/" rel="prev" title="Markdown语法">
-      <i class="fa fa-chevron-left"></i> Markdown语法
+    <a href="/2023/11/09/picgo%E4%B9%8Bgithub%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" rel="prev" title="picgo之github图床搭建">
+      <i class="fa fa-chevron-left"></i> picgo之github图床搭建
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/11/09/VMware%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F/" rel="next" title="VMware的三种模式">
-      VMware的三种模式 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/11/09/%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84/" rel="next" title="常见网络拓扑结构">
+      常见网络拓扑结构 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -295,7 +298,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">应用概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%BA%8A%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">图床安装与使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%EF%BC%9A%E4%BD%BF%E7%94%A8-Piclist-%E4%BB%A3%E6%9B%BF-Picgo"><span class="nav-number">3.</span> <span class="nav-text">扩展：使用 Piclist 代替 Picgo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E6%A6%82%E8%BF%B0-1"><span class="nav-number">3.1.</span> <span class="nav-text">应用概述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#obsidian-%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">obsidian 插件设置</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A7%81%E7%BD%91%E5%9C%B0%E5%9D%80%E8%8C%83%E5%9B%B4"><span class="nav-number">1.</span> <span class="nav-text">私网地址范围</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">三种模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Bridged%EF%BC%88%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">Bridged（桥接模式）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%8F%E8%BF%B0"><span class="nav-number">2.1.1.</span> <span class="nav-text">描述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NAT%EF%BC%88%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">NAT（地址转换模式）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%8F%E8%BF%B0-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">描述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Host-Only%EF%BC%88%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="nav-number">2.3.</span> <span class="nav-text">Host-Only（仅主机模式）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%8F%E8%BF%B0-2"><span class="nav-number">2.3.1.</span> <span class="nav-text">描述</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
